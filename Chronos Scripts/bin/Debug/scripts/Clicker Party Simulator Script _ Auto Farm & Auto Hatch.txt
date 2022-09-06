@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TeempL1/PSimulator/mainTeempL1/Menu"))()

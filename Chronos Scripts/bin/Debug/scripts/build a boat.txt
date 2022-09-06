@@ -1,0 +1,671 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local Launch = Instance.new("TextLabel")
+local Team = Instance.new("TextLabel")
+local WhiteLaunch = Instance.new("TextButton")
+local RedLaunch = Instance.new("TextButton")
+local BlackLaunch = Instance.new("TextButton")
+local BlueLaunch = Instance.new("TextButton")
+local GreenLaunch = Instance.new("TextButton")
+local PinkLaunch = Instance.new("TextButton")
+local YellowLaunch = Instance.new("TextButton")
+local WhiteTeam = Instance.new("TextButton")
+local RedTeam = Instance.new("TextButton")
+local BlackTeam = Instance.new("TextButton")
+local BlueTeam = Instance.new("TextButton")
+local GreenTeam = Instance.new("TextButton")
+local PinkTeam = Instance.new("TextButton")
+local YellowTeam = Instance.new("TextButton")
+local TPtool = Instance.new("TextButton")
+local Chests = Instance.new("TextButton")
+local Player = Instance.new("TextBox")
+local TPplayer = Instance.new("TextButton")
+local TPValue = Instance.new("TextLabel")
+local JumpText = Instance.new("TextBox")
+local Jump = Instance.new("TextButton")
+local JPValue = Instance.new("TextLabel")
+local SpeedText = Instance.new("TextBox")
+local Speed = Instance.new("TextButton")
+local SPDValue = Instance.new("TextLabel")
+ 
+-- Properties
+ 
+ScreenGui.Parent = game.CoreGui
+mouse = game.Players.LocalPlayer:GetMouse()
+ 
+Frame.Parent = ScreenGui
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.new(0.15, 0.15, 0.15)
+Frame.BackgroundTransparency = 0.1
+Frame.BorderColor3 = Color3.new(1, 1, 1)
+Frame.Draggable = true
+Frame.Position = UDim2.new(0.14, 0, 0.015, 0)
+Frame.Selectable = true
+Frame.Size = UDim2.new(0, 350, 0, 350)
+ 
+frame_2 = game.CoreGui.ScreenGui.Frame
+Enabled = true
+ 
+Title.Name = "Title"
+Title.Parent = Frame
+Title.BackgroundColor3 = Color3.new(0, 0, 0)
+Title.BackgroundTransparency = 1
+Title.BorderColor3 = Color3.new(1, 1, 1)
+Title.BorderSizePixel = 2
+Title.Position = UDim2.new(0.09, 0, 0, 0)
+Title.Size = UDim2.new(0, 288, 0, 50)
+Title.Font = Enum.Font.Cartoon
+Title.Text = "Build A boat For Treasure"
+Title.TextColor3 = Color3.new(1, 1, 1)
+Title.TextScaled = true
+Title.TextSize = 14
+Title.TextWrapped = true
+ 
+Launch.Name = "Launch"
+Launch.Parent = Frame
+Launch.BackgroundColor3 = Color3.new(0, 0, 0)
+Launch.BackgroundTransparency = 1
+Launch.BorderColor3 = Color3.new(1, 1, 1)
+Launch.BorderSizePixel = 2
+Launch.Position = UDim2.new(0.09, 0, 0.34, 0)
+Launch.Size = UDim2.new(0, 288, 0, 48)
+Launch.Font = Enum.Font.Cartoon
+Launch.Text = "Launch"
+Launch.TextColor3 = Color3.new(1, 1, 1)
+Launch.TextScaled = false
+Launch.TextSize = 35
+Launch.TextWrapped = true
+ 
+Team.Name = "Team"
+Team.Parent = Frame
+Team.BackgroundColor3 = Color3.new(0, 0, 0)
+Team.BackgroundTransparency = 1
+Team.BorderColor3 = Color3.new(1, 1, 1)
+Team.BorderSizePixel = 2
+Team.Position = UDim2.new(0.09, 0, 0.64, 0)
+Team.Size = UDim2.new(0, 288, 0, 48)
+Team.Font = Enum.Font.Cartoon
+Team.Text = "Team"
+Team.TextColor3 = Color3.new(1, 1, 1)
+Team.TextScaled = false
+Team.TextSize = 35
+Team.TextWrapped = true
+ 
+WhiteLaunch.Name = "WhiteLaunch"
+WhiteLaunch.Parent = Frame
+WhiteLaunch.AnchorPoint = Vector2.new(0.5, 0)
+WhiteLaunch.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+WhiteLaunch.BorderColor3 = Color3.new(1, 1, 1)
+WhiteLaunch.Position = UDim2.new(0.2, 0, 0.46, 0)
+WhiteLaunch.Size = UDim2.new(0, 100, 0, 30)
+WhiteLaunch.AutoButtonColor = false
+WhiteLaunch.Font = Enum.Font.SourceSansBold
+WhiteLaunch.Text = "Launch White"
+WhiteLaunch.TextColor3 = Color3.new(1, 1, 1)
+WhiteLaunch.TextSize = 14
+ 
+RedLaunch.Name = "RedLaunch"
+RedLaunch.Parent = Frame
+RedLaunch.AnchorPoint = Vector2.new(0.5, 0)
+RedLaunch.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+RedLaunch.BorderColor3 = Color3.new(1, 1, 1)
+RedLaunch.Position = UDim2.new(0.5, 0, 0.46, 0)
+RedLaunch.Size = UDim2.new(0, 100, 0, 30)
+RedLaunch.AutoButtonColor = false
+RedLaunch.Font = Enum.Font.SourceSansBold
+RedLaunch.Text = "Launch Red"
+RedLaunch.TextColor3 = Color3.new(1, 0.168, 0.18)
+RedLaunch.TextSize = 14
+ 
+BlackLaunch.Name = "BlackLaunch"
+BlackLaunch.Parent = Frame
+BlackLaunch.AnchorPoint = Vector2.new(0.5, 0)
+BlackLaunch.BackgroundColor3 = Color3.new(0.165, 0.165, 0.1645)
+BlackLaunch.BorderColor3 = Color3.new(1, 1, 1)
+BlackLaunch.Position = UDim2.new(0.8, 0, 0.46, 0)
+BlackLaunch.Size = UDim2.new(0, 100, 0, 30)
+BlackLaunch.AutoButtonColor = false
+BlackLaunch.Font = Enum.Font.SourceSansBold
+BlackLaunch.Text = "Launch Black"
+BlackLaunch.TextColor3 = Color3.new(0, 0, 0)
+BlackLaunch.TextSize = 14
+ 
+BlueLaunch.Name = "BlueLaunch"
+BlueLaunch.Parent = Frame
+BlueLaunch.AnchorPoint = Vector2.new(0.5, 0)
+BlueLaunch.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+BlueLaunch.BorderColor3 = Color3.new(1, 1, 1)
+BlueLaunch.Position = UDim2.new(0.2, 0, 0.56, 0)
+BlueLaunch.Size = UDim2.new(0, 100, 0, 30)
+BlueLaunch.AutoButtonColor = false
+BlueLaunch.Font = Enum.Font.SourceSansBold
+BlueLaunch.Text = "Launch Blue"
+BlueLaunch.TextColor3 = Color3.new(0.38, 0.42, 1)
+BlueLaunch.TextSize = 14
+ 
+GreenLaunch.Name = "GreenLaunch"
+GreenLaunch.Parent = Frame
+GreenLaunch.AnchorPoint = Vector2.new(0.5, 0)
+GreenLaunch.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+GreenLaunch.BorderColor3 = Color3.new(1, 1, 1)
+GreenLaunch.Position = UDim2.new(0.5, 0, 0.56, 0)
+GreenLaunch.Size = UDim2.new(0, 100, 0, 30)
+GreenLaunch.AutoButtonColor = false
+GreenLaunch.Font = Enum.Font.SourceSansBold
+GreenLaunch.Text = "Launch Green"
+GreenLaunch.TextColor3 = Color3.new(0, 0.5, 0)
+GreenLaunch.TextSize = 14
+ 
+PinkLaunch.Name = "PinkLaunch"
+PinkLaunch.Parent = Frame
+PinkLaunch.AnchorPoint = Vector2.new(0.5, 0)
+PinkLaunch.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+PinkLaunch.BorderColor3 = Color3.new(1, 1, 1)
+PinkLaunch.Position = UDim2.new(0.8, 0, 0.56, 0)
+PinkLaunch.Size = UDim2.new(0, 100, 0, 30)
+PinkLaunch.AutoButtonColor = false
+PinkLaunch.Font = Enum.Font.SourceSansBold
+PinkLaunch.Text = "Launch Pink"
+PinkLaunch.TextColor3 = Color3.new(1, 0.1, 1)
+PinkLaunch.TextSize = 14
+ 
+YellowLaunch.Name = "YellowLaunch"
+YellowLaunch.Parent = Frame
+YellowLaunch.AnchorPoint = Vector2.new(0.5, 0)
+YellowLaunch.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+YellowLaunch.BorderColor3 = Color3.new(1, 1, 1)
+YellowLaunch.Position = UDim2.new(0.2, 0, 0.66, 0)
+YellowLaunch.Size = UDim2.new(0, 100, 0, 30)
+YellowLaunch.AutoButtonColor = false
+YellowLaunch.Font = Enum.Font.SourceSansBold
+YellowLaunch.Text = "Launch Yellow"
+YellowLaunch.TextColor3 = Color3.new(1, 1, 0)
+YellowLaunch.TextSize = 14
+ 
+WhiteTeam.Name = "WhiteTeam"
+WhiteTeam.Parent = Frame
+WhiteTeam.AnchorPoint = Vector2.new(0.5, 0)
+WhiteTeam.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+WhiteTeam.BorderColor3 = Color3.new(1, 1, 1)
+WhiteTeam.Position = UDim2.new(0.8, 0, 0.86, 0)
+WhiteTeam.Size = UDim2.new(0, 100, 0, 30)
+WhiteTeam.AutoButtonColor = false
+WhiteTeam.Font = Enum.Font.SourceSansBold
+WhiteTeam.Text = "Team white"
+WhiteTeam.TextColor3 = Color3.new(1, 1, 1)
+WhiteTeam.TextSize = 14
+ 
+RedTeam.Name = "RedTeam"
+RedTeam.Parent = Frame
+RedTeam.AnchorPoint = Vector2.new(0.5, 0)
+RedTeam.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+RedTeam.BorderColor3 = Color3.new(1, 1, 1)
+RedTeam.Position = UDim2.new(0.5, 0, 0.86, 0)
+RedTeam.Size = UDim2.new(0, 100, 0, 30)
+RedTeam.AutoButtonColor = false
+RedTeam.Font = Enum.Font.SourceSansBold
+RedTeam.Text = "Team Red"
+RedTeam.TextColor3 = Color3.new(1, 0.17, 0.18)
+RedTeam.TextSize = 14
+ 
+BlackTeam.Name = "BlackTeam"
+BlackTeam.Parent = Frame
+BlackTeam.AnchorPoint = Vector2.new(0.5, 0)
+BlackTeam.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+BlackTeam.BorderColor3 = Color3.new(1, 1, 1)
+BlackTeam.Position = UDim2.new(0.2, 0, 0.86, 0)
+BlackTeam.Size = UDim2.new(0, 100, 0, 30)
+BlackTeam.AutoButtonColor = false
+BlackTeam.Font = Enum.Font.SourceSansBold
+BlackTeam.Text = "Team Black"
+BlackTeam.TextColor3 = Color3.new(0, 0, 0)
+BlackTeam.TextSize = 14
+ 
+BlueTeam.Name = "BlueTeam"
+BlueTeam.Parent = Frame
+BlueTeam.AnchorPoint = Vector2.new(0.5, 0)
+BlueTeam.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+BlueTeam.BorderColor3 = Color3.new(1, 1, 1)
+BlueTeam.Position = UDim2.new(0.8, 0, 0.76, 0)
+BlueTeam.Size = UDim2.new(0, 100, 0, 30)
+BlueTeam.AutoButtonColor = false
+BlueTeam.Font = Enum.Font.SourceSansBold
+BlueTeam.Text = "Team Blue"
+BlueTeam.TextColor3 = Color3.new(0.38, 0.42, 1)
+BlueTeam.TextSize = 14
+ 
+GreenTeam.Name = "GreenTeam"
+GreenTeam.Parent = Frame
+GreenTeam.AnchorPoint = Vector2.new(0.5, 0)
+GreenTeam.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+GreenTeam.BorderColor3 = Color3.new(1, 1, 1)
+GreenTeam.Position = UDim2.new(0.5, 0, 0.76, 0)
+GreenTeam.Size = UDim2.new(0, 100, 0, 30)
+GreenTeam.AutoButtonColor = false
+GreenTeam.Font = Enum.Font.SourceSansBold
+GreenTeam.Text = "Team Green"
+GreenTeam.TextColor3 = Color3.new(0, 0.5, 0)
+GreenTeam.TextSize = 14
+ 
+PinkTeam.Name = "PinkTeam"
+PinkTeam.Parent = Frame
+PinkTeam.AnchorPoint = Vector2.new(0.5, 0)
+PinkTeam.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+PinkTeam.BorderColor3 = Color3.new(1, 1, 1)
+PinkTeam.Position = UDim2.new(0.2, 0, 0.76, 0)
+PinkTeam.Size = UDim2.new(0, 100, 0, 30)
+PinkTeam.AutoButtonColor = false
+PinkTeam.Font = Enum.Font.SourceSansBold
+PinkTeam.Text = "Team Pink"
+PinkTeam.TextColor3 = Color3.new(1, 0.1, 1)
+PinkTeam.TextSize = 14
+ 
+YellowTeam.Name = "YellowTeam"
+YellowTeam.Parent = Frame
+YellowTeam.AnchorPoint = Vector2.new(0.5, 0)
+YellowTeam.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+YellowTeam.BorderColor3 = Color3.new(1, 1, 1)
+YellowTeam.Position = UDim2.new(0.8, 0, 0.66, 0)
+YellowTeam.Size = UDim2.new(0, 100, 0, 30)
+YellowTeam.AutoButtonColor = false
+YellowTeam.Font = Enum.Font.SourceSansBold
+YellowTeam.Text = "Team Yellow"
+YellowTeam.TextColor3 = Color3.new(1, 1, 0)
+YellowTeam.TextSize = 14
+ 
+TPtool.Name = "TPtool"
+TPtool.Parent = Frame
+TPtool.AnchorPoint = Vector2.new(0.5, 0)
+TPtool.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+TPtool.BorderColor3 = Color3.new(1, 1, 1)
+TPtool.Position = UDim2.new(0.8, 0, 0.36, 0)
+TPtool.Size = UDim2.new(0, 100, 0, 30)
+TPtool.AutoButtonColor = false
+TPtool.Font = Enum.Font.SourceSansBold
+TPtool.Text = "Teleport Tool"
+TPtool.TextColor3 = Color3.new(1, 1, 1)
+TPtool.TextSize = 14
+ 
+Chests.Name = "Chests"
+Chests.Parent = Frame
+Chests.AnchorPoint = Vector2.new(0.5, 0)
+Chests.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+Chests.BorderColor3 = Color3.new(1, 1, 1)
+Chests.Position = UDim2.new(0.2, 0, 0.36, 0)
+Chests.Size = UDim2.new(0, 100, 0, 30)
+Chests.AutoButtonColor = false
+Chests.Font = Enum.Font.SourceSansBold
+Chests.Text = "Collect All Chests"
+Chests.TextColor3 = Color3.new(1, 1, 1)
+Chests.TextSize = 14
+ 
+Player.Name = "Player"
+Player.Parent = Frame
+Player.AnchorPoint = Vector2.new(0.5, 0)
+Player.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+Player.BorderColor3 = Color3.new(1, 1, 1)
+Player.Position = UDim2.new(0.5, 0, 0.16, 0)
+Player.Size = UDim2.new(0, 100, 0, 30)
+Player.Font = Enum.Font.SourceSansBold
+Player.Text = "Set Player"
+Player.TextColor3 = Color3.new(1, 1, 1)
+Player.TextSize = 14
+ 
+TPplayer.Name = "TPplayer"
+TPplayer.Parent = Frame
+TPplayer.AnchorPoint = Vector2.new(0.5, 0)
+TPplayer.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+TPplayer.BorderColor3 = Color3.new(1, 1, 1)
+TPplayer.Position = UDim2.new(0.5, 0, 0.26, 0)
+TPplayer.Size = UDim2.new(0, 100, 0, 30)
+TPplayer.AutoButtonColor = false
+TPplayer.Font = Enum.Font.SourceSansBold
+TPplayer.Text = "TP To Player"
+TPplayer.TextColor3 = Color3.new(1, 1, 1)
+TPplayer.TextSize = 14
+ 
+TPValue.Name = "TPValue"
+TPValue.Parent = Frame
+TPValue.BackgroundColor3 = Color3.new(0, 0, 0)
+TPValue.BackgroundTransparency = 1
+TPValue.BorderColor3 = Color3.new(1, 1, 1)
+TPValue.BorderSizePixel = 2
+TPValue.Position = UDim2.new(1000000000, 0, 1000000000, 0)
+TPValue.Size = UDim2.new(0, 10, 0, 10)
+TPValue.Font = Enum.Font.Cartoon
+TPValue.Visible = false
+TPValue.Text = "No Player Selected"
+TPValue.TextScaled = false
+TPValue.TextSize = 10
+ 
+CharWalk = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
+ 
+SpeedText.Name = "SpeedText"
+SpeedText.Parent = Frame
+SpeedText.AnchorPoint = Vector2.new(0.5, 0)
+SpeedText.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+SpeedText.BorderColor3 = Color3.new(1, 1, 1)
+SpeedText.Position = UDim2.new(0.2, 0, 0.16, 0)
+SpeedText.Size = UDim2.new(0, 100, 0, 30)
+SpeedText.Font = Enum.Font.SourceSansBold
+SpeedText.Text = "Set Walk Speed"
+SpeedText.TextColor3 = Color3.new(1, 1, 1)
+SpeedText.TextSize = 14
+ 
+Speed.Name = "Speed"
+Speed.Parent = Frame
+Speed.AnchorPoint = Vector2.new(0.5, 0)
+Speed.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+Speed.BorderColor3 = Color3.new(1, 1, 1)
+Speed.Position = UDim2.new(0.2, 0, 0.26, 0)
+Speed.Size = UDim2.new(0, 100, 0, 30)
+Speed.AutoButtonColor = false
+Speed.Font = Enum.Font.SourceSansBold
+Speed.Text = "Current: "..CharWalk
+Speed.TextColor3 = Color3.new(1, 1, 1)
+Speed.TextSize = 14
+ 
+SPDValue.Name = "SPDValue"
+SPDValue.Parent = Frame
+SPDValue.BackgroundColor3 = Color3.new(0, 0, 0)
+SPDValue.BackgroundTransparency = 1
+SPDValue.BorderColor3 = Color3.new(1, 1, 1)
+SPDValue.BorderSizePixel = 2
+SPDValue.Position = UDim2.new(1000000000, 0, 1000000000, 0)
+SPDValue.Size = UDim2.new(0, 10, 0, 10)
+SPDValue.Font = Enum.Font.Cartoon
+SPDValue.Visible = false
+SPDValue.Text = "16"
+SPDValue.TextScaled = false
+SPDValue.TextSize = 10
+ 
+CharJump = game.Players.LocalPlayer.Character.Humanoid.JumpPower
+ 
+JumpText.Name = "JumpText"
+JumpText.Parent = Frame
+JumpText.AnchorPoint = Vector2.new(0.5, 0)
+JumpText.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+JumpText.BorderColor3 = Color3.new(1, 1, 1)
+JumpText.Position = UDim2.new(0.8, 0, 0.16, 0)
+JumpText.Size = UDim2.new(0, 100, 0, 30)
+JumpText.Font = Enum.Font.SourceSansBold
+JumpText.Text = "Set Jump Power"
+JumpText.TextColor3 = Color3.new(1, 1, 1)
+JumpText.TextSize = 14
+ 
+Jump.Name = "Jump"
+Jump.Parent = Frame
+Jump.AnchorPoint = Vector2.new(0.5, 0)
+Jump.BackgroundColor3 = Color3.new(0.165, 0.165, 0.165)
+Jump.BorderColor3 = Color3.new(1, 1, 1)
+Jump.Position = UDim2.new(0.8, 0, 0.26, 0)
+Jump.Size = UDim2.new(0, 100, 0, 30)
+Jump.AutoButtonColor = false
+Jump.Font = Enum.Font.SourceSansBold
+Jump.Text = "Current: "..CharJump
+Jump.TextColor3 = Color3.new(1, 1, 1)
+Jump.TextSize = 14
+ 
+JPValue.Name = "JPValue"
+JPValue.Parent = Frame
+JPValue.BackgroundColor3 = Color3.new(0, 0, 0)
+JPValue.BackgroundTransparency = 1
+JPValue.BorderColor3 = Color3.new(1, 1, 1)
+JPValue.BorderSizePixel = 2
+JPValue.Position = UDim2.new(1000000000, 0, 1000000000, 0)
+JPValue.Size = UDim2.new(0, 10, 0, 10)
+JPValue.Font = Enum.Font.Cartoon
+JPValue.Visible = false
+JPValue.Text = "50"
+JPValue.TextScaled = false
+JPValue.TextSize = 10
+ 
+-- Visible/Invisible
+ 
+function PressKey(key)
+	if(key == KeyToHide) then --change this key if you want
+		if (Enabled == false)then
+			frame_2.Visible = true
+			Enabled = true
+		elseif (Enabled == true) then
+			frame_2.Visible = false
+			Enabled = false
+		end
+	end
+end
+ 
+mouse.KeyDown:connect(PressKey)
+ 
+-- Noclip
+ 
+noclip = false
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
+plr = game.Players.LocalPlayer
+mouse = plr:GetMouse()
+mouse.KeyDown:connect(function(key)
+ 
+if key == KeyToNoclip then
+noclip = not noclip
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
+ 
+-- Scripts
+ 
+WhiteLaunch.MouseButton1Down:connect(function()
+	local WhiteEvent = game:GetService("Workspace")["WhiteZone"].RE
+	WhiteEvent:FireServer()
+end)
+ 
+RedLaunch.MouseButton1Down:connect(function()
+	local RedEvent = game:GetService("Workspace")["Really redZone"].RE
+	RedEvent:FireServer()
+end)
+ 
+BlackLaunch.MouseButton1Down:connect(function()
+	local BlackEvent = game:GetService("Workspace").BlackZone.RE
+	BlackEvent:FireServer()
+end)
+ 
+BlueLaunch.MouseButton1Down:connect(function()
+	local BlueEvent = game:GetService("Workspace")["Really blueZone"].RE
+	BlueEvent:FireServer()
+end)
+ 
+GreenLaunch.MouseButton1Down:connect(function()
+	local GreenEvent = game:GetService("Workspace").CamoZone.RE
+	GreenEvent:FireServer()
+end)
+ 
+PinkLaunch.MouseButton1Down:connect(function()
+	local PinkEvent = game:GetService("Workspace")["MagentaZone"].RE
+	PinkEvent:FireServer()
+end)
+ 
+YellowLaunch.MouseButton1Down:connect(function()
+	local YellowEvent = game:GetService("Workspace")["New YellerZone"].RE
+	YellowEvent:FireServer()
+end)
+ 
+WhiteTeam.MouseButton1Down:connect(function()
+	local ASD = game.Teams:GetChildren()
+	for _,obj in pairs(ASD) do
+		obj.Name = "Team".._
+	end
+ 
+	for i, v in pairs(game.Players:GetPlayers()) do
+		game.Workspace.ChangeTeam:FireServer(game.Teams["Team1"].TeamColor, v)
+	end
+end)
+ 
+RedTeam.MouseButton1Down:connect(function()
+	local ASD = game.Teams:GetChildren()
+	for _,obj in pairs(ASD) do
+	obj.Name = "Team".._
+	end
+ 
+	for i, v in pairs(game.Players:GetPlayers()) do 
+		game.Workspace.ChangeTeam:FireServer(game.Teams["Team4"].TeamColor, v)
+	end
+end)
+ 
+BlackTeam.MouseButton1Down:connect(function()
+	local ASD = game.Teams:GetChildren()
+	for _,obj in pairs(ASD) do
+		obj.Name = "Team".._
+	end
+ 
+	for i, v in pairs(game.Players:GetPlayers()) do
+		game.Workspace.ChangeTeam:FireServer(game.Teams["Team5"].TeamColor, v)
+	end
+end)
+ 
+BlueTeam.MouseButton1Down:connect(function()
+	local ASD = game.Teams:GetChildren()
+	for _,obj in pairs(ASD) do
+		obj.Name = "Team".._
+	end
+ 
+	for i, v in pairs(game.Players:GetPlayers()) do
+		game.Workspace.ChangeTeam:FireServer(game.Teams["Team2"].TeamColor, v)
+	end
+end)
+ 
+GreenTeam.MouseButton1Down:connect(function()
+	local ASD = game.Teams:GetChildren()
+	for _,obj in pairs(ASD) do
+		obj.Name = "Team".._
+	end
+ 
+	for i, v in pairs(game.Players:GetPlayers()) do
+		game.Workspace.ChangeTeam:FireServer(game.Teams["Team3"].TeamColor, v)
+	end
+end)
+ 
+PinkTeam.MouseButton1Down:connect(function()
+	local ASD = game.Teams:GetChildren()
+	for _,obj in pairs(ASD) do
+		obj.Name = "Team".._
+	end
+ 
+	for i, v in pairs(game.Players:GetPlayers()) do
+		game.Workspace.ChangeTeam:FireServer(game.Teams["Team7"].TeamColor, v)
+	end
+end)
+ 
+YellowTeam.MouseButton1Down:connect(function()
+	local ASD = game.Teams:GetChildren()
+	for _,obj in pairs(ASD) do
+		obj.Name = "Team".._
+	end
+ 
+	for i, v in pairs(game.Players:GetPlayers()) do
+		game.Workspace.ChangeTeam:FireServer(game.Teams["Team6"].TeamColor, v)
+	end
+end)
+ 
+TPtool.MouseButton1Down:connect(function()
+	bin=Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+	bin.Name = "Teleport"
+ 
+	function teleportPlayer(pos)
+ 
+	local player = game.Players.LocalPlayer
+	if player == nil or player.Character == nil then return end
+ 
+	local char = player.Character
+ 
+	char:MoveTo(pos)
+ 
+	end
+ 
+ 
+	enabled = true
+	function onButton1Down(mouse)
+	if not enabled then
+	return
+	end
+ 
+	local player = game.Players.LocalPlayer
+	if player == nil then return end
+	local cf = mouse.Hit
+	teleportPlayer(cf.p)
+ 
+	end
+ 
+	function onSelected(mouse)
+	mouse.Button1Down:connect(function() onButton1Down(mouse) end)
+	end
+ 
+	bin.Selected:connect(onSelected)
+end)
+ 
+Chests.MouseButton1Down:connect(function()
+	local chest = game.Workspace.Chests
+ 
+	for _,v in pairs(chest:GetDescendants()) do
+		if v.Name == "Chest" then
+			v.PPart.CanCollide = false
+			v.PPart.Transparency = 1
+			v.PPart.CFrame = CFrame.new(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position)
+		end
+	end
+end)
+ 
+Player.FocusLost:connect(function()
+	for i,v in pairs(game.Players:GetChildren()) do
+		if (string.sub(string.lower(v.Name),1,string.len(Player.Text))) == string.lower(Player.Text) then
+			print("Selected "..v.Name)
+			TPValue.Text = v.Name
+			Player.Text = v.Name
+			wait(2)
+			Player.Text = "Set Player"
+		end
+	end
+end)
+ 
+TPplayer.MouseButton1Down:connect(function()
+	if TPValue.Text == "No Player Selected" then
+		print("No Player Selected")
+		TPplayer.Text = "No Player Selected"
+		wait(2)
+		TPplayer.Text = "TP To Player"
+	else
+		TPtext = game.CoreGui.ScreenGui.Frame.TPValue.Text
+		PlayerSelected = game:GetService("Players")[tostring(TPtext)].Character.HumanoidRootPart.CFrame
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = PlayerSelected
+	end
+end)
+ 
+SpeedText.FocusLost:connect(function()
+	Speed.Text = "Current: "..game.CoreGui.ScreenGui.Frame.SpeedText.Text
+	SPDValue.Text = game.CoreGui.ScreenGui.Frame.SpeedText.Text
+	SPDtext = game.CoreGui.ScreenGui.Frame.SPDValue.Text
+	SpeedText.Text = "Set Walk Speed"
+end)
+ 
+JumpText.FocusLost:connect(function()
+	Jump.Text = "Current: "..game.CoreGui.ScreenGui.Frame.JumpText.Text
+	JPValue.Text = game.CoreGui.ScreenGui.Frame.JumpText.Text
+	JPtext = game.CoreGui.ScreenGui.Frame.JPValue.Text
+	JumpText.Text = "Set Jump Power"
+end)
+ 
+while wait() do
+	SPDtext = game.CoreGui.ScreenGui.Frame.SPDValue.Text
+ 
+    if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") ~= nil then
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = SPDtext
+	end
+ 
+	JPtext = game.CoreGui.ScreenGui.Frame.JPValue.Text
+ 
+	if game.Players.LocalPlayer.Character:FindFirstChild("Humanoid") ~= nil then
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = JPtext
+	end
+end

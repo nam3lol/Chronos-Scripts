@@ -1,0 +1,17 @@
+Source: System.NullReferenceException: Object reference not set to an instance of an object.
+   at Chronos_Scripts.Main.CopyBtn_Click(Object sender, EventArgs e) in C:\Users\Nam3\source\repos\Chronos Scripts\Chronos Scripts\Main.cs:line 29
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at (Object , EventArgs )
+   at A.c180b9e03e567289c12707199a03c6cb1.c47fcf75be1d86fbedd640b86e00e056e(Object cc41b940a69bef0e6fe75b2e8545f3226, EventArgs cc41b940a69bef0e6fe75b2e8545f3226)
+   at Siticone.UI.WinForms.Suite.CustomButtonBase.OnClick(EventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
+   at System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.Run(Form mainForm)
+   at Chronos_Scripts.Program.Main() in C:\Users\Nam3\source\repos\Chronos Scripts\Chronos Scripts\Program.cs:line 13

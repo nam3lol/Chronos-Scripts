@@ -1,0 +1,3 @@
+getgenv().comkey = "Enter your key here"
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/muzscripter/projects/main/muz.community/loader.lua"))()

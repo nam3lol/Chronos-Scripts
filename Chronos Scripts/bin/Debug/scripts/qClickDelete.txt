@@ -1,0 +1,9 @@
+local Plr = game:GetService('Players').LocalPlayer
+local Mouse = Plr:GetMouse()
+destroyon = true
+Mouse.Button1Down:connect(function()
+if not game: GetService('UserInputService'):IsKeyDown(Enum.KeyCode.Q) then return end
+if not Mouse.Target then return end
+if not destroyon then return end
+Mouse.Target:Destroy()
+end)

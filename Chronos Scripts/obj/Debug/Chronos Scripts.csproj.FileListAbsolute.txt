@@ -1,0 +1,15 @@
+C:\Users\Nam3\source\repos\Chronos Scripts\Chronos Scripts\bin\Debug\Chronos Scripts.exe.config
+C:\Users\Nam3\source\repos\Chronos Scripts\Chronos Scripts\bin\Debug\Chronos Scripts.exe
+C:\Users\Nam3\source\repos\Chronos Scripts\Chronos Scripts\bin\Debug\Chronos Scripts.pdb
+C:\Users\Nam3\source\repos\Chronos Scripts\Chronos Scripts\bin\Debug\Guna.UI.dll
+C:\Users\Nam3\source\repos\Chronos Scripts\Chronos Scripts\bin\Debug\Guna.UI2.dll
+C:\Users\Nam3\source\repos\Chronos Scripts\Chronos Scripts\bin\Debug\Siticone.UI.dll
+C:\Users\Nam3\source\repos\Chronos Scripts\Chronos Scripts\obj\Debug\Chronos Scripts.csproj.AssemblyReference.cache
+C:\Users\Nam3\source\repos\Chronos Scripts\Chronos Scripts\obj\Debug\Chronos Scripts.csproj.SuggestedBindingRedirects.cache
+C:\Users\Nam3\source\repos\Chronos Scripts\Chronos Scripts\obj\Debug\Chronos_Scripts.Main.resources
+C:\Users\Nam3\source\repos\Chronos Scripts\Chronos Scripts\obj\Debug\Chronos_Scripts.Properties.Resources.resources
+C:\Users\Nam3\source\repos\Chronos Scripts\Chronos Scripts\obj\Debug\Chronos Scripts.csproj.GenerateResource.cache
+C:\Users\Nam3\source\repos\Chronos Scripts\Chronos Scripts\obj\Debug\Chronos Scripts.csproj.CoreCompileInputs.cache
+C:\Users\Nam3\source\repos\Chronos Scripts\Chronos Scripts\obj\Debug\Chronos Scripts.csproj.CopyComplete
+C:\Users\Nam3\source\repos\Chronos Scripts\Chronos Scripts\obj\Debug\Chronos Scripts.exe
+C:\Users\Nam3\source\repos\Chronos Scripts\Chronos Scripts\obj\Debug\Chronos Scripts.pdb
