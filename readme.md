@@ -1,3 +1,8 @@
+# This is an old project and has been archived as of 6/27/2025.
+Many modern executors already include built-in script managers that are significantly better than this one.
+This app was created years ago and isn’t well-designed or maintained. I don’t recommend using it.
+It remains available purely as a legacy project from my earlier work.
+
 # Chronos-Scripts | Open Source Script Storage Application
 Store your favorite Lua Scripts inside of this neat and resource friendly application.
 
